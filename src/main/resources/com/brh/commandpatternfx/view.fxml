@@ -3,17 +3,12 @@
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
 
-<VBox alignment="CENTER" prefHeight="226.0" prefWidth="439.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.brh.commandpatternfx.Controller">
+<VBox alignment="CENTER" prefHeight="436.0" prefWidth="439.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.brh.commandpatternfx.Controller">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
-    <Label fx:id="actionText" prefHeight="54.0" prefWidth="374.0" text="Aktion">
-        <font>
-            <Font size="31.0" />
-        </font>
-    </Label>
+   <TextArea fx:id="actionText" prefHeight="242.0" prefWidth="399.0" />
     <AnchorPane prefHeight="106.0" prefWidth="399.0">
         <children>
             <Button layoutX="333.0" layoutY="40.0" onAction="#onRightClick" text="Rechts" />
@@ -22,5 +17,5 @@
             <Button layoutX="182.0" layoutY="14.0" onAction="#onForwardClick" text="Vor" />
         </children>
     </AnchorPane>
+   <Button mnemonicParsing="false" onAction="#onReplayClick" prefHeight="26.0" prefWidth="387.0" text="Replay" />
 </VBox>
-
