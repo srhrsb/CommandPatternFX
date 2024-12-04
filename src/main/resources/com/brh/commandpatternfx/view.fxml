@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="226.0" prefWidth="439.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.brh.commandpatternfx.Controller">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <Label fx:id="actionText" prefHeight="54.0" prefWidth="374.0" text="Aktion">
+        <font>
+            <Font size="31.0" />
+        </font>
+    </Label>
+    <AnchorPane prefHeight="106.0" prefWidth="399.0">
+        <children>
+            <Button layoutX="333.0" layoutY="40.0" onAction="#onRightClick" text="Rechts" />
+            <Button layoutX="14.0" layoutY="40.0" onAction="#onLeftClick" text="Links" />
+            <Button layoutX="173.0" layoutY="68.0" onAction="#onBackClick" text="Zurück" />
+            <Button layoutX="182.0" layoutY="14.0" onAction="#onForwardClick" text="Vor" />
+        </children>
+    </AnchorPane>
+</VBox>
+
